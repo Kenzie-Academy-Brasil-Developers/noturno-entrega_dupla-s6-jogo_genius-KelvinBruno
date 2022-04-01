@@ -21,34 +21,40 @@ header {
 header h1 {
     padding-bottom: 30px;
 }
-.container {
+#container {
+    width: 100%;
+    text-align: center;
+}
+
+#gameContainer {
     width: 500px;
     height: 500px;
     display: flex;
     flex-wrap: wrap;
+    margin: auto;
 }
 .block {
     width: 250px;
     height: 250px;
     cursor: pointer;
 }
-.red {
+#red {
     background-color: red;
     border-top-left-radius: 100%;
 }
-.green {
+#green {
     background-color: green;
     border-top-right-radius: 100%;
 }
-.blue {
+#blue {
     background-color: blue;
     border-bottom-left-radius: 100%;
 }
-.yellow {
+#yellow {
     background-color: yellow;
     border-bottom-right-radius: 100%;
 }
-.center {
+#center {
     width: 300px;
     height: 300px;
     background-color: black;
@@ -61,6 +67,7 @@ header h1 {
     align-items: center;
     justify-content: center;
     font-size: 30px;
+    font-family: 'Pacifico', cursive;
 }
 button {
     margin-top: 40px;
@@ -71,10 +78,37 @@ button {
 .active {
     opacity: 0.4;
 }
+.block:hover {
+    opacity: 0.4;
+}
 
-
-.asideNivel {
+#asideNivel {
     width: 200px;
     height: 200px;
-    background-color: darkmagenta;
+    background-color: darkslateblue;
+    float: right;
+    margin-top: -450px;
+    margin-right: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 20px;
+    color: white;
+    font-family: 'Pacifico', cursive;
+    border-radius: 20%;
+}
+#asideExplicacao {
+    width: 200px;
+    height: 300px;
+    background-color: darkslateblue;
+    float: left;
+    margin-top: -500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 20px;
+    color: white;
+    font-family: 'Pacifico', cursive;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
