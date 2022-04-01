@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+body {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+header {
+    width: 100%;
+    height: 120px;
+    font-size: 75px;
+    background-color: darkslateblue;
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Pacifico', cursive;
+}
+header h1 {
+    padding-bottom: 30px;
+    
+}
+#container {
+    width: 100%;
+    text-align: center;
+}
+
+#gameContainer {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.block {
+    width: 250px;
+    height: 250px;
+    cursor: pointer;
+}
+#vermelho {
+    background-color: red;
+    border-top-left-radius: 100%;
+}
+#verde {
+    background-color: green;
+    border-top-right-radius: 100%;
+}
+#azul {
+    background-color: blue;
+    border-bottom-left-radius: 100%;
+}
+#amarelo {
+    background-color: yellow;
+    border-bottom-right-radius: 100%;
+}
+#center {
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    border-radius: 100%;
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 100px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-family: 'Pacifico', cursive;
+}
+button {
+    margin-top: 40px;
+    width: 200px;
+    height: 70px;
+    font-size: 30px;
+    background-color: darkslateblue;
+    color: white;
+    font-family: 'Pacifico', cursive;
+    
+}
+.perdeu{
+    font-size: 15px;
+}
+.animacao {
+    opacity: 0.4;
+}
+.block:hover {
+    transform: scale(1.1);
+}
+
+#asideNivel {
+    width: 200px;
+    height: 200px;
+    background-color: darkslateblue;
+    float: right;
+    margin-top: -500px;
+    margin-right: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 20px;
+    color: white;
+    font-family: 'Pacifico', cursive;
+    border-radius: 20%;
+}
+#asideExplicacao {
+    width: 200px;
+    height: 300px;
+    background-color: darkslateblue;
+    float: left;
+    margin-top: -500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 20px;
+    color: white;
+    font-family: 'Pacifico', cursive;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+#asideExplicacao span {
+    font-size: 15px;
+}
+#testando{
+    width: 500px;
+    height: 500px;
+}
+
+@media (max-width: 1500px)
+{
+    #asideNivel {
+        width: 200px;
+        height: 200px;
+        background-color: darkslateblue;
+        float: right;
+        margin-top: -500px;
+        margin-right: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        font-size: 20px;
+        color: white;
+        font-family: 'Pacifico', cursive;
+        border-radius: 20%;
+    }
+}
+
+@media (max-width: 900px)
+{
+     .block{
+        margin-top: 400px;
+        margin-bottom: 0px;
+      
+    }
+    #azul{
+        margin: 0px;
+    }
+    #amarelo{
+        margin: 0px;
+    }
+    #center{
+        margin-top: 500px;
+    }
+    button{
+        margin-top: 450px;
+    }
+    .animacao {
+        opacity: 0.4;
+    }
+}
